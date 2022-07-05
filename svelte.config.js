@@ -8,11 +8,15 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
-		adapter: adapter(),
+		adapter: adapter({
+			pages: 'build',
+			assets: 'build',
+			fallback: null
+		}),
 		prerender: {
-			default: true,
-		},
-	},
+			default: true
+		}
+	}
 };
 
 export default config;
