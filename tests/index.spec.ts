@@ -12,10 +12,10 @@ test('Visiting index page', async ({ page }) => {
 	expect(mainHeader).toContainText("Hi! I'm Jeff");
 
 	// Find the intro text
-	const introText = page.locator('data-testid=index-intro-text');
+	const introText = page.locator('data-testid=info-text');
 	await expect(introText).toBeVisible();
 	expect(introText).toContainText(
-		`I'm learning how to build static sites ` + `with Svelte, using Playwright tests for TDD.`
+		`I'm learning how to build static sites with Svelte, using Playwright BDD.`
 	);
 
 	// Click text=Home
