@@ -6,19 +6,11 @@ test('Visiting index page', async ({ page }) => {
 
 	expect(page).toHaveTitle('Jeff Alexander');
 
-	// Find the main header
-	const mainHeader = page.locator('.main-header');
-	await expect(mainHeader).toBeVisible();
-	expect(mainHeader).toContainText("Hi! I'm Jeff");
+	// Go to http://localhost:3000/
+	await page.goto('http://localhost:3000/');
 
-	// Find the intro text
-	const introText = page.locator('data-testid=info-text');
-	await expect(introText).toBeVisible();
-	expect(introText).toContainText(
-		`I'm learning how to build static sites with Svelte, using Playwright BDD.`
-	);
+	expect(page).toHaveTitle('Jeff Alexander');
 
-	// Click text=Home
-	await page.locator('text=Home').click();
-	await expect(page).toHaveURL('http://localhost:3000/');
+	// Click text=Hi! I'm Jeff.
+	await page.locator("text=Hi! I'm Jeff.").click();
 });
