@@ -16,9 +16,6 @@
 		font-stretch: ultra-expanded;
 	}
 	#info-card {
-		border: 1px solid;
-		border-radius: 10%;
-		border-color: #00000099;
 		font-family: 'Nunito', sans-serif;
 		color: black;
 		height: 200px;

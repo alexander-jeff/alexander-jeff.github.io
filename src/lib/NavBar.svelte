@@ -1,12 +1,11 @@
 <script>
-	import { Nav, NavItem, NavLink } from 'sveltestrap';
 </script>
 
 <div class="nav-bar">
-	<Nav>
-		<NavLink href="/">Home</NavLink>
-		<NavLink href="/about">About</NavLink>
-	</Nav>
+	<nav>
+		<a href="/">Home</a>
+		<a href="/about">About</a>
+	</nav>
 </div>
 
 <style>
