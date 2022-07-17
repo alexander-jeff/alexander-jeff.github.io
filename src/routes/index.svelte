@@ -1,5 +1,5 @@
-<h1 class="main-header">Hi! I'm Jeff</h1>
+<script>
+	import InfoCard from '../lib/InfoCard.svelte';
+</script>
 
-<p data-testid="index-intro-text">
-	I'm learning how to build static sites with Svelte, using Playwright tests for TDD.
-</p>
+<InfoCard />
