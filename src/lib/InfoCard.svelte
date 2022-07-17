@@ -23,8 +23,6 @@
 	#info-card {
 		font-family: 'Nunito', sans-serif;
 		color: black;
-		height: 200px;
-		width: 30%;
 		padding: 1rem;
 	}
 </style>
